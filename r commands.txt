@@ -1,0 +1,58 @@
+ crime.test=read.table(file="clipboard",header=F,sep="\t")
+> view(crime.test)
+
+> View(crime.test)
+> crimedata=read.table(file="clipboard",header=T,sep="\t")
+> View(crimedata)
+> table(crimedata$Location)
+> table(crimedata$Price)
+names(crimedata)
+summary(crimedata)
+
+summary(crimedata$Price)
+summary(crimedata$Crime.Rating)
+crimeratingcut=cut(crimedata$Crime.Rating,breaks=c(-1,5,9),labels=c("low","high"))
+table(crimeratingcut)
+col
+> mytable
+sum(mytable)
+margin.table(mytable, 1)
+margin.table(mytable, 2)
+barplot (mytable, beside=T, col=c(1:2), legend=rownames(mytable))
+pie(table(crimedata$Location, crimeratingcut))
+barplot (mytable, beside=T, col=c(1:2), legend=rownames(mytable))
+barplot(table(crimedata$Location,crimedata$Price),col=c(1:2),legend=rownames(mytable))
+prop.table(mytable,2)
+prop.table(mytable,1)
+
+> NYcrimerate=crimedata$Price[crimedata$Location=="NY"]
+> mean(NYcrimerate)
+
+> NYcrime=subset(crimedata, Location=="NY")
+> head(NYcrime)
+
+> sum(table(crimedata$region)/20)
+[1] 0
+> sum(table(crimedata$Location)
++ )
+[1] 46
+> table(crimedata$Location)/4
+
+
+ mytable=table(crimedata$Location, crimedata$Price)
+> mytable
+ mytable=table(dt$Location, dt$Time)
+> barplot(table(dt$Location, dt$Time),col=c(1:2),legend=rownames(mytable))
+
+
+
+
+
+
+
+
+
+
+
+
+
